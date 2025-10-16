@@ -2230,6 +2230,239 @@ To https://github.com/<username>/MyGitProject.git
 
 
 
+For Oral
+
+Perfect 👍 You’ve uploaded the **DevOps practical sets (Set 1–5)** which include tasks with **Git, Maven, Jenkins, and Docker**.
+For an **oral/viva exam**, questions are usually asked from the steps, commands, and purpose of each tool used.
+
+Here’s a complete list of **expected oral/viva questions with clear answers**, based on each set:
+
+---
+
+## 🧩 **Set 1 (Git, Maven, Docker)**
+
+### **Q1 – Git Repository Creation**
+
+**Oral Questions:**
+
+1. What command is used to initialize a Git repository?
+   → `git init`
+
+2. How do you add a file to the staging area?
+   → `git add filename`
+
+3. How do you commit changes?
+   → `git commit -m "message"`
+
+4. How do you link a local repo to GitHub?
+   → `git remote add origin <repo_url>`
+
+5. What is the purpose of `git push origin main`?
+   → To upload local commits to the remote GitHub repository.
+
+---
+
+### **Q2 – Maven Project Creation**
+
+**Oral Questions:**
+
+1. What is Maven used for?
+   → Maven is a build automation tool for Java projects.
+
+2. Command to create a new Maven project?
+   → `mvn archetype:generate`
+
+3. What does `mvn clean package` do?
+   → Cleans previous builds and packages the project into a `.jar` file.
+
+4. What is `pom.xml`?
+   → It’s the Project Object Model file containing dependencies and configurations.
+
+5. Where is the `.jar` file generated?
+   → Inside the `target` folder.
+
+---
+
+### **Q3 – Dockerfile Creation**
+
+**Oral Questions:**
+
+1. What is Docker?
+   → Docker is a platform to build, run, and deploy applications inside containers.
+
+2. What is a Dockerfile?
+   → A script containing instructions to build a Docker image.
+
+3. Command to build a Docker image?
+   → `docker build -t imagename .`
+
+4. Command to see available Docker images?
+   → `docker images`
+
+5. What is the difference between image and container?
+   → Image is a blueprint; container is a running instance of that image.
+
+---
+
+## 🧩 **Set 2 (Jenkins + Webhook + Docker)**
+
+### **Q1 – Jenkins Freestyle Project**
+
+1. What is Jenkins used for?
+   → Jenkins automates building, testing, and deploying code.
+
+2. What is a Freestyle project?
+   → A basic Jenkins project to build and run scripts or Maven commands.
+
+3. How do you integrate Jenkins with GitHub?
+   → Use the Git plugin and provide the repository URL.
+
+4. Which command does Jenkins run for Maven build?
+   → `mvn clean package`
+
+---
+
+### **Q2 – Webhook Trigger**
+
+1. What is a webhook in Jenkins?
+   → It automatically triggers Jenkins builds when code is pushed to GitHub.
+
+2. Where do we configure the webhook?
+   → In GitHub repository → Settings → Webhooks.
+
+3. What URL is added in GitHub webhook?
+   → Jenkins server URL + `/github-webhook/`
+
+4. What event triggers the webhook?
+   → “Push event”.
+
+---
+
+### **Q3 – Run Docker Container**
+
+1. Command to run a Docker container?
+   → `docker run -d --name mycontainer imagename`
+
+2. How do you check running containers?
+   → `docker ps`
+
+3. How do you view container logs?
+   → `docker logs container_name`
+
+---
+
+## 🧩 **Set 3 (Git, Jenkins Pipeline, Docker)**
+
+### **Q1 – Modify Git Repo**
+
+1. How do you clone a repo?
+   → `git clone <repo_url>`
+
+2. How do you check commit history?
+   → `git log`
+
+---
+
+### **Q2 – Jenkins Pipeline**
+
+1. What is a Jenkins Pipeline?
+   → A set of automated stages defined in a Jenkinsfile.
+
+2. What are the common pipeline stages?
+   → Checkout → Build → Test → Deploy.
+
+3. How do you define a pipeline in Jenkinsfile?
+   → Using `pipeline { stages { ... } }`
+
+4. What language is used in Jenkinsfile?
+   → Groovy.
+
+---
+
+### **Q3 – Docker Image Build**
+
+1. Command to build an image?
+   → `docker build -t imagename .`
+
+2. Command to list Docker images?
+   → `docker images`
+
+---
+
+## 🧩 **Set 4 (Jenkinsfile + Docker + Maven)**
+
+### **Q1 – Jenkinsfile Pipeline**
+
+1. What is a Jenkinsfile used for?
+   → To define pipeline stages as code.
+
+2. Example stages in Jenkinsfile?
+   → Checkout, Build (Maven), Docker Build.
+
+3. What is Continuous Integration (CI)?
+   → Automating code builds and testing whenever changes are made.
+
+---
+
+### **Q2 – Run Docker Container from Jenkins**
+
+1. How to run Docker inside Jenkins?
+   → Use Docker plugin or shell commands in the pipeline.
+
+2. Command to check logs from Jenkins pipeline?
+   → Use `docker logs` in pipeline shell step.
+
+---
+
+### **Q3 – Manual Maven Build in Jenkins**
+
+1. How to run a manual build in Jenkins?
+   → Click “Build Now” on Jenkins job dashboard.
+
+2. How to verify Maven build success?
+   → Console output shows “BUILD SUCCESS”.
+
+---
+
+## 🧩 **Set 5 (Scheduler + Docker Hub + Git)**
+
+### **Q1 – Scheduled Jenkins Build**
+
+1. How do you schedule builds in Jenkins?
+   → Using “Build periodically” option with CRON syntax.
+
+2. Example CRON for every 5 minutes?
+   → `H/5 * * * *`
+
+---
+
+### **Q2 – Push Image to Docker Hub**
+
+1. How to login to Docker Hub?
+   → `docker login`
+
+2. How to tag image before pushing?
+   → `docker tag localname username/repo:tag`
+
+3. How to push image?
+   → `docker push username/repo:tag`
+
+---
+
+### **Q3 – Git Version Control**
+
+1. How can you view commit history?
+   → `git log`
+
+2. How do you check file differences between versions?
+   → `git diff`
+
+3. Why is version control important?
+   → It tracks changes, allows collaboration, and rollback of code.
+
+---
+
+Would you like me to make this into a **Word or PDF file (formatted as Oral Viva Q&A)** so you can print or revise easily before exam?
 
 
 
